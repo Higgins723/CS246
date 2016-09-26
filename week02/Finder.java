@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 
 class Finder {
 
@@ -43,7 +44,9 @@ class Finder {
             System.out.println("Error reading '" + topics_file + "'");
             System.out.println(e.getMessage());
         }
-        System.out.println(counter.ReturnMap());
+
+        Map Topics = counter.ReturnMap();
+        System.out.println(Topics.keySet());
     }
 }
 

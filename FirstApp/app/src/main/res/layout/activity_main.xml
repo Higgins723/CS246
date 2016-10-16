@@ -10,8 +10,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.beesa.firstapp.MainActivity">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPersonName"
+        android:text="Book"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/book" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Chapter"
+        android:ems="10"
+        android:layout_below="@+id/book"
+        android:layout_alignLeft="@+id/book"
+        android:layout_alignStart="@+id/book"
+        android:id="@+id/chapter" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Verse"
+        android:ems="10"
+        android:layout_below="@+id/chapter"
+        android:layout_alignRight="@+id/chapter"
+        android:layout_alignEnd="@+id/chapter"
+        android:id="@+id/verse" />
+
+    <Button
+        android:text="Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:id="@+id/share_button" />
 </RelativeLayout>

@@ -38,6 +38,6 @@ public class Scripture implements Serializable {
 
     @Override
     public String toString(){
-        return "Your favorite scripture is: " + bookName + chapterName + ":" + verseName;
+        return "Your favorite scripture is: " + bookName + " " + chapterName + ":" + verseName;
     }
 }
